@@ -49,7 +49,7 @@ public class Stacks {
         System.out.println("Element on stack top: " + element);
     }
 
-    // Searching element in the dtack
+    // Searching element in the stack
     static void stack_search(Stack<Integer> stack, int element) {
         Integer pos = (Integer) stack.search(element);
 
