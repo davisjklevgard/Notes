@@ -29,6 +29,11 @@ public class Introduction {
                     if(n == 0) return 1;
                     return n*factorial(n-1);
                 }
+
+        Comparing
+        the recursive way makes the problems concise and clean or easier to understand
+        the iterative way performs better in term of how fast it runs or how much memory is consumed
+        recursion may cause stack overflow errors
      */
 
     public static int factorial (int n) {
@@ -37,6 +42,7 @@ public class Introduction {
     }
 
     public static void main(String[] args) {
+
         System.out.println(factorial(3));
     }
 }

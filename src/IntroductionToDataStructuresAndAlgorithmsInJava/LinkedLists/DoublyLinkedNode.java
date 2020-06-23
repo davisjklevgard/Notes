@@ -1,27 +1,27 @@
 package IntroductionToDataStructuresAndAlgorithmsInJava.LinkedLists;
 //switched with the list
-public class DoublyLinkedList {
+public class DoublyLinkedNode {
 
-    private DoublyLinkedList head;
+    private DoublyLinkedNode head;
 
-    public DoublyLinkedList(Integer data) {
+    public DoublyLinkedNode(Integer data) {
 
     }
 
-    public DoublyLinkedList getHead() {
+    public DoublyLinkedNode getHead() {
         return this.head;
     }
 
-    protected void setHead(DoublyLinkedList head) {
+    protected void setHead (DoublyLinkedNode head) {
         this.head = head;
     }
 
-    public boolean isHead(DoublyLinkedList node) {
+    public boolean isHead(DoublyLinkedNode node) {
         return this.head == node;
     }
 
     public void insertAtHead(Integer data) {
-        DoublyLinkedList newNode = new DoublyLinkedList(data);
+        DoublyLinkedNode newNode = new DoublyLinkedNode(data);
         newNode.setNextNode(this.head);
         if (this.head != null) {
             this.head.setPreviousNode(newNode);
@@ -29,17 +29,17 @@ public class DoublyLinkedList {
         this.head = newNode;
     }
 
-    private void setPreviousNode(DoublyLinkedList newNode) {
+    private void setPreviousNode(DoublyLinkedNode newNode) {
     }
 
-    private void setNextNode(DoublyLinkedList head) {
+    private void setNextNode(DoublyLinkedNode head) {
     }
 
     public int length() {
         if (head == null)
             return 0;
         int length = 0;
-        DoublyLinkedList curr = this.head;
+        DoublyLinkedNode curr = this.head;
         while (curr != null) {
             length += 1;
             curr.getNextNode();
@@ -57,7 +57,7 @@ public class DoublyLinkedList {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        DoublyLinkedList n = this.head;
+        DoublyLinkedNode n = this.head;
         while (n != null) {
             sb.append("Node data: ");
             sb.append(n);

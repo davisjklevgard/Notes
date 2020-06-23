@@ -1,6 +1,6 @@
 package IntroductionToDataStructuresAndAlgorithmsInJava.LinkedLists;
 
-class DoublyLinkedList2 {
+class DoublyLinkedList {
     /*
         Doubly linked Node:
             this node holds its data, points a reference to the next node, AND holds a reference to the previous node.
