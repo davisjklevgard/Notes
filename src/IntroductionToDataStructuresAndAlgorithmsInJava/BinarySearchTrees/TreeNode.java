@@ -13,6 +13,7 @@ public class TreeNode /* aka BinaryTrees*/{
     private Integer data;
     private TreeNode leftChild;
     private TreeNode rightChild;
+    private boolean isDeleted = false;
 
     public TreeNode(Integer data){
         this.data = data;
@@ -33,7 +34,7 @@ public class TreeNode /* aka BinaryTrees*/{
     }
 
     /*public TreeNode find(Integer data) {
-        if (this.data == data);
+        if (this.data == data && !isDeleted);
             return this;
         if (data <this.data && leftChild != null)
             return leftChild.find(data);
@@ -61,5 +62,13 @@ public class TreeNode /* aka BinaryTrees*/{
 
     public TreeNode getRightChild() {
         return rightChild;
+    }
+
+    public void delete() {
+        this.isDeleted = true;
+    }
+
+    public  boolean isDeleted() {
+        return isDeleted;
     }
 }
