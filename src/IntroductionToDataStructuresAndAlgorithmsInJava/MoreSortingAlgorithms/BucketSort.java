@@ -13,5 +13,12 @@ public class BucketSort {
 
         Time Complexity
          Worst case can be O(n)
+
+        Found at https://www.geeksforgeeks.org/bucket-sort-2/
+            1. Create n empty buckets (Or lists).
+            2. Do following for every array element arr[i].
+                Insert arr[i] into bucket[n*array[i]]
+            3. Sort individual buckets using insertion sort.
+            4. Concatenate all sorted buckets.
      */
 }
